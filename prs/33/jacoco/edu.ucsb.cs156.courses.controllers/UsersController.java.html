@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
   @Autowired ObjectMapper mapper;
 
-  // KEEP UNTIL CLEANUP
+  // Keep until after frontend is implemented
   @Operation(summary = &quot;Get a list of all users&quot;)
   @PreAuthorize(&quot;hasRole('ROLE_ADMIN')&quot;)
   @GetMapping(&quot;&quot;)

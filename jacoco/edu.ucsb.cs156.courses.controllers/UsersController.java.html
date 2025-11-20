@@ -2,11 +2,11 @@
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import edu.ucsb.cs156.courses.entities.User;
 import edu.ucsb.cs156.courses.repositories.UserRepository;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,13 +21,25 @@ import org.springframework.web.bind.annotation.RestController;
 
   @Autowired ObjectMapper mapper;
 
+  // Keep until after frontend is implemented
   @Operation(summary = &quot;Get a list of all users&quot;)
   @PreAuthorize(&quot;hasRole('ROLE_ADMIN')&quot;)
   @GetMapping(&quot;&quot;)
   public ResponseEntity&lt;String&gt; users() throws JsonProcessingException {
-<span class="fc" id="L28">    Iterable&lt;User&gt; users = userRepository.findAll();</span>
-<span class="fc" id="L29">    String body = mapper.writeValueAsString(users);</span>
-<span class="fc" id="L30">    return ResponseEntity.ok().body(body);</span>
+<span class="fc" id="L29">    var page = userRepository.findAll(Pageable.unpaged());</span>
+<span class="fc" id="L30">    var users = page.getContent();</span>
+<span class="fc" id="L31">    String body = mapper.writeValueAsString(users);</span>
+<span class="fc" id="L32">    return ResponseEntity.ok().body(body);</span>
+  }
+
+  @Operation(summary = &quot;Get a paged list of users&quot;)
+  @PreAuthorize(&quot;hasRole('ROLE_ADMIN')&quot;)
+  @GetMapping(&quot;/paged&quot;)
+  public ResponseEntity&lt;String&gt; usersPaged(Pageable pageable) throws JsonProcessingException {
+
+<span class="fc" id="L40">    var usersPage = userRepository.findAll(pageable);</span>
+<span class="fc" id="L41">    String body = mapper.writeValueAsString(usersPage);</span>
+<span class="fc" id="L42">    return ResponseEntity.ok().body(body);</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

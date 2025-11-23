@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for pages/SectionSearches/SectionSearchesIndexPageLoggedIn.jsx</title>
+    <title>Code coverage report for components/Jobs/JobsSearchForm.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">pages/SectionSearches</a> SectionSearchesIndexPageLoggedIn.jsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/Jobs</a> JobsSearchForm.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/4</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -119,6 +119,7 @@
 <a name='L54'></a><a href='#L54'>54</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -127,37 +128,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">45x</span>
+<span class="cline-any cline-yes">45x</span>
+<span class="cline-any cline-yes">45x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -169,59 +142,86 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState } from "react";
-import BasicLayout from "main/layouts/BasicLayout/BasicLayout";
-import BasicCourseSearchForm from "main/components/BasicCourseSearch/BasicCourseSearchForm";
-import _BasicCourseTable from "main/components/Courses/BasicCourseTable";
-import { useBackend, useBackendMutation } from "main/utils/useBackend";
-import SectionsTable from "main/components/Sections/SectionsTable";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Container, Row, Col } from "react-bootstrap";
+import GenericDropdown from "main/components/Utils/GenericDropdown";
 &nbsp;
-export default function SectionSearchesIndexPageLoggedIn() {
-  const {
-    data: schedules,
-    error: _error,
-    status: _status,
-  } = useBackend(
-    ["/api/personalschedules/all"],
-    { method: "GET", url: "/api/personalschedules/all" },
-    [],
-  );
+const JobsSearchForm = ({
+  sortField,
+  sortDirection,
+  pageSize,
+  updateSortField,
+  updateSortDirection,
+  updatePageSize,
+}) =&gt; {
+  // Stryker disable all ; testing for specific hard coded lists is just writing the code twice
+  const sortFields = ["id", "status", "createdAt", "updatedAt"];
+  const sortDirections = ["ASC", "DESC"];
+  const pageSizes = ["10", "50", "100", "200", "500"];
+  // Stryker restore all
 &nbsp;
-  const [sectionJSON, setSectionJSON] = useState([]);
-&nbsp;
-  const objectToAxiosParams = (query) =&gt; ({
-    url: "/api/public/primaries",
-    params: {
-      qtr: query.quarter,
-      dept: query.subject,
-      level: query.level,
-    },
-  });
-&nbsp;
-  const onSuccess = (section) =&gt; {
-    setSectionJSON(section);
-  };
-&nbsp;
-  const mutation = useBackendMutation(
-    objectToAxiosParams,
-    { onSuccess },
-    // Stryker disable next-line all : hard to set up test for caching
-    [],
-  );
-&nbsp;
-  async function fetchBasicSectionJSON(_event, query) {
-    mutation.mutate(query);
-  }
   return (
-    &lt;BasicLayout&gt;
-      &lt;div className="pt-2"&gt;
-        &lt;h5&gt;UCSB Courses Search&lt;/h5&gt;
-        &lt;BasicCourseSearchForm fetchJSON={fetchBasicSectionJSON} /&gt;
-        &lt;SectionsTable sections={sectionJSON} schedules={schedules} /&gt;
-      &lt;/div&gt;
-    &lt;/BasicLayout&gt;
+    &lt;Container&gt;
+      &lt;Row&gt;
+        &lt;Col md="auto"&gt;
+          &lt;GenericDropdown
+            values={sortFields}
+            value={sortField}
+            setValue={updateSortField}
+            controlId={"JobsSearch.SortField"}
+            label="Sort By"
+          /&gt;
+        &lt;/Col&gt;
+        &lt;Col md="auto"&gt;
+          &lt;GenericDropdown
+            values={sortDirections}
+            value={sortDirection}
+            setValue={updateSortDirection}
+            controlId={"JobsSearch.SortDirection"}
+            label="Sort Direction"
+          /&gt;
+        &lt;/Col&gt;
+        &lt;Col md="auto"&gt;
+          &lt;GenericDropdown
+            values={pageSizes}
+            value={pageSize}
+            setValue={updatePageSize}
+            controlId={"JobsSearch.PageSize"}
+            label="Page Size"
+          /&gt;
+        &lt;/Col&gt;
+      &lt;/Row&gt;
+    &lt;/Container&gt;
   );
-}
+};
+&nbsp;
+export default JobsSearchForm;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

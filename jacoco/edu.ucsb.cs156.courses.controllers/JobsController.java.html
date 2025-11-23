@@ -240,7 +240,7 @@ import org.springframework.web.bind.annotation.RestController;
           String sortDirection) {
 
 <span class="fc" id="L242">    List&lt;String&gt; allowedSortFields =</span>
-<span class="fc" id="L243">        Arrays.asList(&quot;createdBy&quot;, &quot;status&quot;, &quot;createdAt&quot;, &quot;completedAt&quot;);</span>
+<span class="fc" id="L243">        Arrays.asList(&quot;id&quot;, &quot;createdBy&quot;, &quot;status&quot;, &quot;createdAt&quot;, &quot;updatedAt&quot;);</span>
 
 <span class="fc bfc" id="L245" title="All 2 branches covered.">    if (!allowedSortFields.contains(sortField)) {</span>
 <span class="fc" id="L246">      throw new IllegalArgumentException(</span>

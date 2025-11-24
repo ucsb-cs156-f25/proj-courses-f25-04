@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for components/PersonalSchedules/PersonalScheduleDropdown.jsx</title>
+    <title>Code coverage report for components/Jobs/JobsSearchForm.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/PersonalSchedules</a> PersonalScheduleDropdown.jsx</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">components/Jobs</a> JobsSearchForm.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -114,32 +114,23 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">45x</span>
+<span class="cline-any cline-yes">45x</span>
+<span class="cline-any cline-yes">45x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -152,7 +143,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">28x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -165,57 +155,73 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { useState } from "react";
-import { Form } from "react-bootstrap";
-import { yyyyqToQyy } from "main/utils/quarterUtilities.jsx";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Container, Row, Col } from "react-bootstrap";
+import GenericDropdown from "main/components/Utils/GenericDropdown";
 &nbsp;
-const PersonalScheduleDropdown = ({
-  schedules,
-  schedule,
-  setSchedule,
-  controlId,
-  onChange = null,
-  label = "Schedule",
+const JobsSearchForm = ({
+  sortField,
+  sortDirection,
+  pageSize,
+  updateSortField,
+  updateSortDirection,
+  updatePageSize,
 }) =&gt; {
-  const localSearchSchedule = localStorage.getItem(controlId);
-&nbsp;
-  const [scheduleState, setScheduleState] = useState(
-    // Stryker disable next-line all : not sure how to test/mock local storage
-    localSearchSchedule || schedule,
-  );
-&nbsp;
-  const handleScheduleOnChange = (event) =&gt; {
-    const selectedSchedule = event.target.value;
-    localStorage.setItem(controlId, selectedSchedule);
-    setScheduleState(selectedSchedule);
-    setSchedule(selectedSchedule);
-    if (onChange != null) {
-      onChange(event);
-    }
-  };
+  // Stryker disable all ; testing for specific hard coded lists is just writing the code twice
+  const sortFields = ["id", "status", "createdAt", "updatedAt"];
+  const sortDirections = ["ASC", "DESC"];
+  const pageSizes = ["10", "50", "100", "200", "500"];
+  // Stryker restore all
 &nbsp;
   return (
-    &lt;Form.Group controlId={controlId}&gt;
-      &lt;Form.Label&gt;{label}&lt;/Form.Label&gt;
-      &lt;Form.Control
-        as="select"
-        value={scheduleState}
-        onChange={handleScheduleOnChange}
-      &gt;
-        {schedules.map(function (object, i) {
-          const key = `${controlId}-option-${i}`;
-          return (
-            &lt;option key={key} data-testid={key} value={object.id}&gt;
-              {yyyyqToQyy(object.quarter)} {object.name}
-            &lt;/option&gt;
-          );
-        })}
-      &lt;/Form.Control&gt;
-    &lt;/Form.Group&gt;
+    &lt;Container&gt;
+      &lt;Row&gt;
+        &lt;Col md="auto"&gt;
+          &lt;GenericDropdown
+            values={sortFields}
+            value={sortField}
+            setValue={updateSortField}
+            controlId={"JobsSearch.SortField"}
+            label="Sort By"
+          /&gt;
+        &lt;/Col&gt;
+        &lt;Col md="auto"&gt;
+          &lt;GenericDropdown
+            values={sortDirections}
+            value={sortDirection}
+            setValue={updateSortDirection}
+            controlId={"JobsSearch.SortDirection"}
+            label="Sort Direction"
+          /&gt;
+        &lt;/Col&gt;
+        &lt;Col md="auto"&gt;
+          &lt;GenericDropdown
+            values={pageSizes}
+            value={pageSize}
+            setValue={updatePageSize}
+            controlId={"JobsSearch.PageSize"}
+            label="Page Size"
+          /&gt;
+        &lt;/Col&gt;
+      &lt;/Row&gt;
+    &lt;/Container&gt;
   );
 };
 &nbsp;
-export default PersonalScheduleDropdown;
+export default JobsSearchForm;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
